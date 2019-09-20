@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(img/livros.png);
+    background-size: cover;    
+    background-repeat: no-repeat;   
+    
+}
+@font-face{
+    src:url(fontes/AmaticSC-Bold.ttf);
+    font-family: amatic;
+}
+
+@font-face{
+    src:url(fontes/Montserrat-Medium.ttf);
+    font-family: monteserrat;
+}
+
+@font-face{
+    src:url(fontes/DancingScript-Bold.ttf);
+    font-family: handwritten;
+}
+
+@font-face {
+    src: url(fontes/Comfortaa-Regular.ttf);
+    font-family: comfort;
+}
+
+.logo a {
+    font-family: amatic;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #c68c53;  
+    
+    color: black;     
+        
+}
+
+.logo {
+    margin-right:auto;
+    background-color: #c68c53;
+}
+
+li, a, button {
+    font-family: monteserrat, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: aliceblue;
+    text-decoration: none; 
+    background-color: #c68c53; 
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    background-color:#c68c53;
+    width: 100%;
+    position: fixed;
+    z-index: 1; 
+    
+}
+
+.naveg{
+    list-style: none; 
+    background-color: #c68c53;   
+
+}
+
+.naveg li{
+    display: inline-block;
+    padding: 8px 20px;
+}
+
+.naveg li a:hover{
+    color: #261a0d;
+}
+
+button{
+    padding: 9px 25px;
+    background-color:#e60000;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;    
+}
+
+button:hover{
+    background-color: #4d3319;
+
+}
+
+
+.conteudo p{
+    font-family: handwritten;
+    font-size: 60px;
+    position: absolute;
+    top: 40%;
+    left: 10%;     
+
+}
+
+.formulario{
+    font-family: comfort;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 500px;
+    background-color:#e6f5ff;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0, .1);
+    box-shadow: 0 5px 10px rgb(0, 0, 0,.2 );
+
+}
+
+.formulario h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color:#cc3300;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: comfort;
+}
+
+.formulario label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.formulario input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.formulario input[type="text"], input[type="email"], input[type="password"]{
+
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #1a0d00;
+    font-size: 16px;    
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: #261a0d;
+    font-family: monteserrat;
+}
+
+.opcoes input[type=checkbox] + label {
+    display:inline-block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+}
+  
+.opcoes input[type=checkbox] {
+    display: none;
+}
+  
+.opcoes input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;   
+    transition: .2s;
+   
+}
+
+.opcoes input[type=checkbox]:checked + label:before {
+    background-color: MediumSeaGreen;
+    color: #fff;
+}
+
+.opcoes input[type=checkbox] + label:active:before {
+    transform: scale(0);
+}
+  
+.opcoes input[type=checkbox]:checked + label:before {
+    background-color: MediumSeaGreen;
+    border-color: MediumSeaGreen;
+    color: #fff;
+}
+  
+.opcoes input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+}
+  
+
+ 
+
+.formulario input[type="button"]
+{
+    border: none;
+    outline: none;
+    padding: 9px 15px;
+    height: 40px;
+    width: 150px;
+    background: #e60000;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
